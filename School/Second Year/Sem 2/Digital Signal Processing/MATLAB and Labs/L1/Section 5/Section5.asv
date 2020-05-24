@@ -1,0 +1,15 @@
+
+
+in = [2,3,4,7];
+fprintf("OUT: %d\n", neighbor(in));
+
+
+function out = neighbor(in)
+    fprintf("IN: %d\n", in);
+    
+    fprintf("si: %d\n", size(in));
+    
+    for x = 1 : size(in)
+    end
+    out = 10;
+end

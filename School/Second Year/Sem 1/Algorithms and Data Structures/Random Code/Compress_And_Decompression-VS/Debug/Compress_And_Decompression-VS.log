@@ -1,0 +1,5 @@
+﻿  main.cpp
+C:\Users\Graeme Judge\OneDrive - Conestoga College\School\Second year ese\Semester 1\Data structs and algs\Code\Compress_And_Decompression-VS\main.cpp(7,10): warning C4067:  unexpected tokens following preprocessor directive - expected a newline
+C:\Users\Graeme Judge\OneDrive - Conestoga College\School\Second year ese\Semester 1\Data structs and algs\Code\Compress_And_Decompression-VS\main.cpp(10,13): warning C4326:  return type of 'main' should be 'int' instead of 'void'
+C:\Users\Graeme Judge\OneDrive - Conestoga College\School\Second year ese\Semester 1\Data structs and algs\Code\Compress_And_Decompression-VS\main.cpp(24,9): warning C4477:  'printf' : format string '%.2f' requires an argument of type 'double', but variadic argument 1 has type 'size_t'
+  Compress_And_Decompression-VS.vcxproj -> C:\Users\Graeme Judge\OneDrive - Conestoga College\School\Second year ese\Semester 1\Data structs and algs\Code\Compress_And_Decompression-VS\Debug\Compress_And_Decompression-VS.exe

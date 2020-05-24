@@ -1,0 +1,25 @@
+Route #1 Data
+
+Doon Campus Door #1 cant get it to line up properly
+43.39073N
+80.40375W
+Connection for Route #3 Waterloo Campus
+Connection for GRT
+
+Residence
+43.38491N
+80.41155W
+
+Cambridge Campus
+43.38611N
+80.39685W
+Connection for Route #2 Guelph Campus
+Connection for Route #4 Research Centre
+Connection for GRT
+	
+
+???
+
+threshhold for lat = 0.000006
+
+threshhold for lon = 0.00001
