@@ -1,0 +1,40 @@
+
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta name="author" content="Connor LaGuff, Graeme Judge, Sean Berkvens" >
+		<meta content="utf-8" http-equiv="encoding">
+		<meta name="floorNum" content="3">
+
+		<title>Floor 3 Control</title>
+		
+		<link rel="stylesheet" href="../css/button.css">
+		<link rel="stylesheet" href="../css/navbar.css">
+		<link rel="stylesheet" href="../css/copyright.css">
+		<script src="../js/dateupdate.js"></script>
+		<script src="./js/audio.js"></script>
+		<script src="./js/floorControl.js"></script>
+	
+	</head>
+
+	<body id="body">
+
+	<div class="container">	
+		<img id="myImage" src="../res/elevatorfloor3.png" usemap="#workmap" style="width:1500px;height:800px;">	
+		<button class="btn" id="elevatordir">At Stop</button>
+		<button class="btnh" >At Floor:</button>
+		<button class="btng" id="floorDisplay">3</button>
+	</div>
+	
+	<map name="workmap">
+			<area href="#" onmousedown="goingdown.play() " shape="circle" coords="975,415,10" class="btnf" onclick="goDown(3);document.getElementById('myImage').src='../res/elevatorfloor3downon.png'" >
+	</map>
+		<a href="../../index.html" id="backButton">Home</a>
+		<p class="cpyear unlocked_cp"> Connor LaGuff, Graeme Judge, Sean Berkvens</p>
+	</body>
+
+</html>
+
+

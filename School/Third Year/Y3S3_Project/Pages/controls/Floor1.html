@@ -1,0 +1,49 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta content="utf-8" http-equiv="encoding">
+
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+
+		<meta name="floorNum" content="1">
+
+		<title>Floor 1 Control</title>
+		<!-- Bootstrap -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="../css/button.css">
+		<link rel="stylesheet" href="../css/navbar.css">
+		<link rel="stylesheet" href="../css/copyright.css">
+		<meta name="author" content="Connor LaGuff, Graeme Judge, Sean Berkvens" >
+		<script src="./js/floorControl.js"></script>
+		<script src="./js/audio.js"></script>
+		<script src="../js/dateupdate.js"></script>
+	
+	</head>
+
+	<body id="body">
+		<div class="container">
+			<img  id="myImage" src="../res/elevatorfloor1.png" usemap="#workmap" style="width:1500px;height:800px;">	
+			<button class="btn" id="elevatordir">At Stop</button>
+			<button class="btnh" >At Floor:</button>
+			<button class="btng" id="floorDisplay">1</button>
+		</div>
+		
+		<map name="workmap">
+			<area href="#" onmousedown="goingup.play() " shape="circle" coords="975,402,10" class="btnu" onclick="document.getElementById('myImage').src='../res/elevatorfloor1upon.png';goUp(1);">
+			<!-- <area shape="circle" coords="975,415,10" class="btnf" onclick="goDown(1);" > -->
+		</map>
+		
+		<a href="../../index.html" id="backButton">Home</a>
+		<p class="cpyear unlocked_cp"> Connor LaGuff, Graeme Judge, Sean Berkvens</p>
+	</body>
+
+</html>
+
+

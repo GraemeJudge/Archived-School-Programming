@@ -1,0 +1,16 @@
+{
+	"loginInfo" : [
+		{
+			"Username" : "GraemeJudge",
+			"Password" : "JudgeGraeme"
+		},
+		{
+			"Username" : "SeanBerkvens",
+			"Password" : "BerkvensSean"
+		},
+		{
+			"Username" : "ConnorLaGuff",
+			"Password" : "LaGuffConnor"
+		}	
+	]
+}

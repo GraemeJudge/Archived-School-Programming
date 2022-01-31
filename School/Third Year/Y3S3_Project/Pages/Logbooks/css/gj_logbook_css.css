@@ -1,0 +1,59 @@
+#backButton{
+	margin-left: 96%;
+	bottom: 2%;
+	font-size:20px;
+}
+
+th, td {
+	border: 2px solid black;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+table {
+	width: 100%;
+	box-sizing: border-box;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+.header-text{
+	vertical-align:middle; 
+	float:left;
+}
+
+.header-image {
+	vertical-align:middle; 
+	float:right; 
+	padding:10px;
+}
+
+.table_block {
+	padding: 5px;
+	width: 100%;;
+	box-sizing: border-box;	
+}
+
+.logDate {
+	width: 15%;
+}
+
+.desc {
+	width: 75%;
+	padding-left: 5px;
+}
+
+.table_head{
+	background-color:rgb(170,170,170);
+}
+
+.codeBlock{
+	background-color:rgb(210,210,210);
+	font-size: 13px;
+	width:90%;
+}
+
+.cpyear {
+	color:rgb(170,170,170);
+	margin-left:45%;
+}

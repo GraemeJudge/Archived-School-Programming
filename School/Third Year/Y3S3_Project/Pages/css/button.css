@@ -1,0 +1,176 @@
+#topBtn {
+	right:50;
+	background-color: #0099cc;
+	font-size: 25px;
+	color: white;
+}
+
+#topBtn:hover {
+	background-color: #0099cc;
+	font-size: 25px;
+	color: red;
+}
+
+.container .btnu {
+  position: absolute;
+  top: 44%;
+  left: 63%;
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn {
+  position: absolute;
+  top: 3%;
+  left: 45%;
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btnf {
+  position: absolute;
+  top: 50%;
+  left: 63%;
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btng {
+  position: absolute;
+  top: 8%;
+  left: 63%;
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btnh {
+  position: absolute;
+  top: 3%;
+  left: 63%;
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btna {
+  position: absolute;
+  top: 44%;
+  left: 54%;
+  background-color: #929493;
+  color: white;
+  font-size: 16px;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.container .btnb {
+  position: absolute;
+  top: 55%;
+  left: 54%;
+  background-color: #929493;
+  color: white;
+  font-size: 16px;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.container .btnd {
+  position: absolute;
+  top: 25%;
+  left: 53%;
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btne {
+  position: absolute;
+  top: 19%;
+  left: 53%;
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btnu:hover {
+  background-color: black;
+}
+
+.container .btnd:hover {
+  background-color: black;
+}
+
+.container .btnb:hover {
+  background-color: black;
+}
+
+.container .btnc {
+  position: absolute;
+  top: 67%;
+  left: 54%;
+  background-color: #929493;
+  color: white;
+  font-size: 16px;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.container .btnc:hover {
+  background-color: black;
+}
+
+.container .btna:hover {
+  background-color: black;
+}
+
+.container .btnf:hover {
+  background-color: black;
+}

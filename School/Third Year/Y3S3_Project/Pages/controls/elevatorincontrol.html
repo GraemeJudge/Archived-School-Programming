@@ -1,0 +1,41 @@
+
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Interior Control</title>
+		<link rel="stylesheet" href="../css/navbar.css">
+		<link rel="stylesheet" href="../css/button.css">
+		<script src="./js/floorControl.js"></script>
+		<script src="./js/audio.js"></script>
+			<meta name="floorNum" content="0">
+		<meta name="author" content="Connor LaGuff, Graeme Judge, Sean Berkvens" >
+	</head>
+
+	<body>
+		<div class="container">
+		
+			<img usemap="#workmap"  id="myImage" src="../res/elevatorin0.jpg"  style="width:1200px;height:800px;">
+			
+			<button class="btne">Destination:</button>
+			
+			<button class="btnd" id="floorDisplay">1</button>
+
+		</div>
+	<map name="workmap">
+			<area  href="#" onmousedown="floor3audio.play() "shape="circle" coords="825,380,35" class="btnu" onclick="document.getElementById('myImage').src='../res/elevatorin3.jpg';floor(3);" >
+			<area href="#" onmousedown="floor2audio.play() " shape="circle" coords="825,470,35" class="btnf" onclick="document.getElementById('myImage').src='../res/elevatorin2.jpg';floor(2);" >
+			<area href="#" onmousedown="floor1audio.play() " shape="circle" coords="825,560,35" class="btnf" onclick="document.getElementById('myImage').src='../res/elevatorin1.jpg';floor(1);" >
+		</map>
+		<a href="../../index.html" id="backButton">Home</a>
+			<div style="position:absolute;left:50px;top:300px;">
+    <iframe  src="https://previews.customer.envatousercontent.com/files/284246327/index.html" muted="muted" allowTransparency="true"></iframe>
+<!--link to where the minigame is found:	https://codepen.io/DemGam/pen/XWbyVKR-->
+</div>
+	</body>
+
+</html>
+
+
+
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="Author" content="Graeme Judge, Sean Berkvens, Connor LaGuff">
+		<script src="../js/dateupdate.js"></script>
+		<script src="js/requestAccess.js" defer></script>
+		<link rel="stylesheet" href="../css/navbar.css">
+		<link rel="stylesheet" href="../css/copyright.css">
+		<link rel="stylesheet" href="css/accessControl.css">
+		
+		<!-- Bootstrap -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+		<!-- Bootstrap -->
+		
+		<title>Request Access Page</title>
+	</head>
+
+	<body>
+		<div class="container-fluid">
+			<div class="row" id="header">
+				<h1 class="col-sm-12">Project 6: Request Access Page</h1>
+			</div>
+			
+			<div class="row" id="navbar">
+				<nav class="navbar navbar-expand-sm justify-content-center">
+					<ul class="navbar-nav">
+						<li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+					</ul>
+				</nav>
+			</div>
+			
+		</div>
+
+		<br><br>
+			<div class="container">
+				<form method="post" action="php/newUser.php">
+					<div class="input-group mb-3">
+						<span class="input-group-text">First and last name</span>
+						<input type="text" class="form-control" name="fname" placeholder="John" id="firstName" required>
+						<input type="text" class="form-control" name="lname" placeholder="Smith" id="secondName" required>
+					</div>
+					
+					<div class="" id="names">
+					</div>
+					
+					<div class="input-group mb-3">
+						<span class="input-group-text">Username</span>
+						<input type="text" class="form-control" name="user" placeholder="username" id="username" required>
+					</div>
+					
+					<div class="" id="uname">
+					</div>
+					
+					<div class="input-group mb-3">
+						<span class="input-group-text">Email</span>
+						<input type="email" class="form-control" name="email" placeholder="example@something.com" id="userEmail" required>
+					</div>
+					
+					<div class="mb-3" id="emailBox">
+					</div>
+					
+					<div class="input-group mb-3">
+						<span class="input-group-text">Password</span>
+						<input type="password" class="form-control" name="pass" placeholder="password" id="userpass" required>
+					</div>
+					
+					<div class="mb-3" id="passwordBox">
+					</div>
+					
+					<div class="input-group mb-3" id="reasonBox">
+						<span class="input-group-text">Reason For Requesting</span>
+						<textarea id="requestReason" class="form-control" name="requestReason" placeholder="Type here" rows="4"></textarea>
+					</div>
+					<p id="charCount">Characters left: 180</p>
+					<button type="submit" class="btn btn-primary">Request</button>
+				</form>
+			</div>
+			
+			<p class="cpyear unlocked_cp"> Connor, Graeme, Sean</p>
+			
+	</body>
+
+</html>
+

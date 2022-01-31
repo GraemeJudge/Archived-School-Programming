@@ -1,0 +1,94 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Connor LaGuff, Graeme Judge, Sean Berkvens" >
+		
+		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+		<meta http-equiv="Pragma" content="no-cache" />
+		<meta http-equiv="Expires" content="0" />
+
+		<link rel="stylesheet" href="../../css/button.css">
+		<link rel="stylesheet" href="../../css/navbar.css">
+		
+		<!-- Bootstrap -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+		<!-- Bootstrap -->
+		
+		<title>Admin Panel</title>
+	</head>
+
+	<body>	
+		<div class="container-fluid">
+			<div class="row" id="header">
+				<h1 class="col-sm-12">Project 6: Admin Panel</h1>
+			</div>
+			
+			<div class="row" id="navbar">
+				<nav class="navbar navbar-expand-sm justify-content-center">
+					<ul class="navbar-nav">
+						<li class="nav-item"><a class="nav-link" href="../../../index.html">Home</a></li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown nav-item" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Diagnostics
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="../../Diagnostics/Diagnostics.html">Diagnostics Graphs</a></li>
+								<li><a class="dropdown-item" href="../../Diagnostics/CANMessages.html">CAN Messages</a></li>
+							</ul>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="view.php">Requests</a></li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown nav-item" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								Controls
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="../elevatorincontrol.html">Interior</a></li>
+								<li><a class="dropdown-item" href="../Floor.html">Exterior</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			
+		</div>
+
+		<br><br>
+		<iframe src="http://localhost:5080/" height="400" width="900" title="Elevator Livestream"></iframe> 	
+		<div id="inputArea">
+			<form onSubmit="return false" name="form1">	
+				<label for="fsel">Please pick a floor: </label>	
+				<input type="number" id="fsel" name="floorSelect">
+				<input type="submit" onclick="handleForm()"></input>
+			</form>	
+
+			<p>Destination:</p>
+			<p id="floorDisplay">3</p>
+			<br>
+			<br>
+			<input type="button" name="Go to Floor 1" value="Go to Floor 1" id="1" onclick="floor(1);colorchange('1', false)" style="background:rgb(51,181,229);"/>
+			<input type="button" name="Go to Floor 2" value="Go to Floor 2" id="2"onclick="floor(2);colorchange('2', false)" style="background:rgb(51,181,229);"/>
+			<input type="button" name="Go to Floor 3" value="Go to Floor 3" id="3" onclick="floor(3);colorchange('3', false)"style="background:rgb(51,181,229);"/>
+			
+			<input type="button" name="At Floor 1" value="Floor 1 Limit Switch" id="select" onclick="colorchange('1', true)" style="background:rgb(26,255,0);"/>	
+			<input type="button" name="At Floor 2" value="Floor 2 Limit Switch" id="select1" onclick="colorchange('2', true)" style="background:rgb(26,255,0);"/>	
+			<input type="button" name="At Floor 3" value="Floor 3 Limit Switch" id="select2" onclick="colorchange('3', true)" style="background:rgb(26,255,0);"/>
+
+			<input type="checkBox" name="Sabbath" id="sabbathMode" onclick="colorchange('3', true)" style="background:rgb(26,255,0);"> SabbathMode</input>
+			
+			<hr>
+			<input type="button" onclick="location.href='logout.php'" value="Logout"/>
+		</div>
+	
+		
+	</body>
+
+</html>
+

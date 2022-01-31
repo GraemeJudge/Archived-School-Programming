@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="author" content="Graeme Judge">
+		
+		<link rel="stylesheet" type="text/css" href="css/gj_logbook_css.css"/>
+		<script src="../js/dateupdate.js"></script>
+			
+		<title>Graeme ESE Logbook</title>
+	</head>
+			
+	<body>
+		<div>
+			<h1 class="header-text">ESE Logbook Graeme Judge</h1>
+			<img src="../res/graeme.jpg" class="header-image" width="100"></img>
+		</div>
+		<hr style="clear:both"/>
+		<div class="table_block">
+			<table>
+				<tr class="table_head">
+					<th class="logDate">Date</th>
+					<th class="desc">Work Done</th>
+				</tr>
+				<tr>
+					<th class="logDate">21/05/2021<br>Week 1</th>
+					<td class="desc">- First group meeting <br>
+						- Connected to the raspberry pi<br>
+						- Successfully started the server and connected from home pc<br>
+						- Moved the elevator and was able to see it moving through the camera<br>
+						- Got the git repo setup with group memebers added as collaborators<br>
+						- Added some placeholder pages to the git repo<br>
+						- Started rough design for the gui
+					</td>
+				</tr>
+				<tr>
+					<th class="logDate">28/05/2021<br>Week 2/3</th>
+					<td id="desc">- Completed group meeting<br>
+						- Added index pages to use as a directory for navigating pages<br>
+						- Did some temporary UI updates to the webpages<br>
+						- Read CAN messages using the raspberrypi, had some issues where the only id I was able to read from was 0x101<br>
+						- Modified raspberry pi code to learn how it works (no changes were saved just for learning purposes)<br>
+						- Got the nucleo reading and writing CAN messages in loopback<br>
+					</td>
+				</tr>
+				<tr>
+					<th class="logDate">28/05/2021<br>Week 4</th>
+					<td class="desc">- Completed group meeting<br>
+						- Updating navagation bar and styling<br>
+						- Did some temporary UI updates to the webpages<br>
+						- Moved the navagation bar from bootstrap 4.5 to 5<br>
+						- Considered speaker for floor announcements, unsure where the speaker is connected so cant begin work on that yet
+					</td>
+				</tr>
+				<tr>
+					<th class="logDate">14/06/2021<br>Week 5</th>
+					<td class="desc">- Completed group meeting<br>
+						- Added login page for the admin panel<br>
+						- Added js files to check for user details (will be changed once server has been implemented)<br>
+						- Talked about other added things like chart.js for displaying info
+					</td>
+				</tr>
+				<tr>
+					<th class="logDate">20/06/2021<br>Week 6</th>
+					<td class="desc">- Completed group meeting<br>
+						- Updated login page<br>
+						- Added <a href="../accessControl/json/users.json">users.json</a> for storing users login info<br>
+						- Added <a href="../accessControl/js/adminLogin.js">adminLogin.js</a> for form validation on the login page<br>
+						- Added <a href="../accessControl/js/requestAccess.js">requestAccess.js</a> for form validation on the request access page<br>
+						- Added <a href="../accessControl/css/accessControl.css">accessControl.css</a> for styling the access control pages<br>
+						- Added <a href="../accessControl/php/confirmation.php">confirmation.php</a> for validating user login using the following code:
+						<pre class="codeBlock">
+	session_start();   
+	// Get data submitted in the form
+	$username = $_POST['user'];
+	$password = $_POST['pass']; 
+	$authenticated = false; 
+
+	if(file_exists('../JSON/users.json')){
+		$usersArray = json_decode(file_get_contents('../json/users.json'));
+
+		foreach($usersArray-&gt;loginInfo as $data){
+			if (($username == $data-&gt;Username)) {
+				if($password == $data-&gt;Password) {
+					$authenticated = true;
+				}
+			}
+		}
+		
+		if($authenticated) {
+			$_SESSION['username'] = $username;
+			$_SESSION['password'] = $password; 
+			echo '&lt;h2&gt;Congrats ' . $username . ' you are authenticated&lt;/h2&gt;';
+			echo '&lt;p&gt;Please click &lt;a href=\'member.php\'&gt;here&lt;/a&gt; to go to the members only page&lt;/p&gt;';
+		} else {
+			echo '&lt;p&gt;Sorry but you are not authenticated!&lt;/p&gt;&lt;br&gt;&lt;p&gt;Please request access &lt;a href="../RequestAccess.html"&gt;here&lt;/a&gt;&lt;/p&gt; ';
+		}
+	}
+						</pre>
+						- Added <a href="../accessControl/php/newUser.php">newUser.php</a> to echo the user input for requesting access using the following code:
+						<pre class="codeBlock">
+	$FirstName = $_POST['fname'];
+	$LastName = $_POST['lname']; 
+
+	$username = $_POST['user'];
+	$password = $_POST['pass']; 
+
+	$Email = $_POST['email'];
+	$Comment = $_POST['requestReason']; 
+
+
+	echo "&lt;p&gt;&lt;b&gt;New user request with the following details: &lt;/b&gt;&lt;/p&gt;";
+	echo "&lt;b&gt;First Name:&lt;/b&gt; $FirstName&lt;br&gt;";
+	echo "&lt;b&gt;Last Name:&lt;/b&gt; $LastName&lt;br&gt;";
+	echo "&lt;b&gt;Username:&lt;/b&gt; $username&lt;br&gt;";
+	echo "&lt;b&gt;Password:&lt;/b&gt; $password&lt;br&gt;";
+	echo "&lt;b&gt;Email:&lt;/b&gt; $Email&lt;br&gt;";
+	echo "&lt;b&gt;Reason for requesting:&lt;/b&gt; $Comment&lt;br&gt;";
+						</pre>
+						- Talked about other added things like chart.js for displaying info<br>
+						- Added copyright years and names to pages
+					</td>	
+				</tr>
+				<tr>
+					<th class="logDate">05/07/2021<br>Week 7/8</th>
+					<td class="desc">- Completed group meeting<br>
+						- Took a break to relax and decompress<br>
+						- Added <a href="../Diagnostics/diagnostics.html">diagnostics.html</a> for displaying diagnostic data using chart.js using code found in <a href="../Diagnostics/js/diagnostics.js">diagnostics.js</a><br>
+						- Updated the floors buttons to use ajax to send data to the server database using the following code:
+						<pre class="codeBlock">
+	function getRequest(RQURL, name, value, func){
+		var xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange = function() {
+			if (this.readyState == 4 && this.status == 200) {
+				func(this.responseText);
+			}
+		};
+		
+		xhttp.open("POST", RQURL, true);
+		xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+		xhttp.send(name + "=" + value);	
+	}
+						</pre>
+					</td>	
+				</tr>
+				<tr>
+					<th class="logDate">12/07/2021<br>Week 9</th>
+					<td class="desc">- Completed group meeting<br>
+						- Dedicated majority of the time to studying for several exams<br>
+					</td>	
+				</tr>
+				<tr>
+					<th class="logDate">19/07/2021<br>Week 10</th>
+					<td class="desc">
+						- Completed group meeting<br>
+						- Completed phase 2 report<br>
+						- Major updates to the <a href="../Diagnostics/diagnostics.html">diagnostics.html</a> page making it display 4 seperate graphs<br>
+						- Major updates to the <a href="../Diagnostics/php/getData.php">getData.php</a> page making it get 3 different datasets from the database and passsing it back to the diagnostics apge<br>
+						- Major updates to the <a href="../Diagnostics/js/diagnostics.js">diagnostics.js</a> page making it display 4 seperate graphs using ajax requests to the php page to get the datasets to display and update the graphs<br>
+						- Created the <a href="../Diagnostics/css/charts.css">charts.css</a> page for styling on the diagnostics page<br>
+					</td>	
+				</tr>
+				<tr>
+					<th class="logDate">26/07/2021<br>Week 11</th>
+					<td class="desc">
+						- Completed group meeting<br>
+						- Major updates to the <a href="../Diagnostics/diagnostics.html">diagnostics.html</a> page making for the final graph<br>
+						- Added the <a href="../controls/php/members.php">members.php</a> page making it check the session for the admin panel<br>
+						- Added the <a href="../controls/php/logout.php">logout.php</a> page making it log the user out of their session<br>
+						- Major updates to the <a href="../Diagnostics/php/getData.php">getData.php</a> page making it get all of the requests made in the last hour<br>
+					</td>	
+				</tr>
+				<tr>
+					<th class="logDate">09/08/2021<br>Phase 3</th>
+					<td class="desc">
+						- Completed group meeting<br>
+						- Implemented the C FSM code in FSM.c and FSM.h<br>
+						- Major updates to the <a href="../Diagnostics/diagnostics.html">diagnostics.html</a> page making for the final graph<br>
+						- Major updates to the <a href="../Diagnostics/CANMessages.html">CANMessages.html</a> page for the can messages display<br>
+						- Made <a href="../Diagnostics/php/getCAN.php">getData.php</a> page making it get all of the messages in the database<br>
+						- Made <a href="../Diagnostics/php/clearCAN.php">getData.php</a> page making it get all of the messages in the database<br>
+						- Finished C Code controlling the elevator and the database<br>
+						- Updates to the <a href="../controls/js/floorControl.js">Floorcontrol.js</a> file<br>
+					</td>	
+				</tr>
+			</table>
+		</div>
+
+		<a href="../../" id="backButton">Back</a>
+		<p class="cpyear"> Graeme Judge</p>
+	</body>
+		
+</html>
+

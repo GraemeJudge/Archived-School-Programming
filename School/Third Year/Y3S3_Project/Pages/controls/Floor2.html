@@ -1,0 +1,42 @@
+
+<!DOCTYPE HTML>
+
+<html>
+
+	<head>
+		<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+		<meta name="author" content="Connor LaGuff, Graeme Judge, Sean Berkvens" >
+		<meta content="utf-8" http-equiv="encoding">
+		<meta name="floorNum" content="2">
+		
+		<title>Floor 2 Control</title>
+		<link rel="stylesheet" href="../css/button.css">
+		<link rel="stylesheet" href="../css/navbar.css">
+		<link rel="stylesheet" href="../css/copyright.css">
+		<script src="../js/dateupdate.js"></script>
+		<script src="./js/audio.js"></script>
+		<script src="./js/floorControl.js"></script>
+		
+	</head>
+
+	<body id="body">
+		<div class="container">
+				
+			<img id="myImage" src="../res/elevatorfloor2.png" usemap="#workmap" style="width:1500px;height:800px;">	
+			<button class="btn" id="elevatordir">At Stop</button>
+			<button class="btnh" >At Floor:</button>
+			<button class="btng" id="floorDisplay">2</button>
+
+		</div>
+		<map name="workmap">
+			<area href="#" onmousedown="goingup.play() " shape="circle" coords="975,402,10" class="btnu" onclick="goUp(2);document.getElementById('myImage').src='../res/elevatorfloor2upon.png';" >
+			<area href="#" onmousedown="goingdown.play() " shape="circle" coords="975,415,10" class="btnf" onclick="goDown(2);document.getElementById('myImage').src='../res/elevatorfloor2downon.png';" >
+		</map>
+		
+		<a href="../../index.html" id="backButton">Home</a>
+		<p class="cpyear unlocked_cp"> Connor LaGuff, Graeme Judge, Sean Berkvens</p>
+	</body>
+
+</html>
+
+

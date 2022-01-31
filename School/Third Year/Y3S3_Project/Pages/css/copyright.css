@@ -1,0 +1,21 @@
+
+.names {
+	position:fixed;
+	right:45%;
+	bottom: 1%;
+	color: rgb(175,175,175);
+}
+.cpyear{
+	color: rgb(175,175,175);
+}
+
+.locked_cp{
+	position:fixed;
+	left:40%;
+	bottom: 1%;
+}
+
+.unlocked_cp{
+	margin-left:40%;
+	margin-bottom: 1%;
+}

@@ -1,0 +1,170 @@
+#header {
+	background-color: #33b5e5;	
+	padding:15px;
+	color: white;
+}
+
+#team_title{
+	padding-top:20px;
+}
+
+#navbar {
+	background-color: #0099cc;
+	font-size:10px;
+	color: white;
+}
+
+#navbar a{
+	font-size: 25px;
+	color: white;
+}
+
+#navbar a:hover{
+	color:red;
+}
+
+.dropdown-item{
+	color:black !important;
+	font-size: 20px !important;
+}
+
+.nav-link, .nav-item{
+	padding-left: 30px;
+	padding-right: 30px;
+}	
+
+body { background-color: white; }
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1500px;
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 300;
+  width: 500;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+.container img {
+  width: 100%;
+  height: 800;
+}
+
+
+/* Small devices (tablets 768px and up */
+@media (min-width:768px) {	/* Styling applied only if device width is GREATER than 768px */
+			#inputArea{
+				font-size:20px;
+				padding: 2px;
+				margin : 5px;
+				width: 25%;
+			}
+			
+			#inputArea > button{
+				width: 40%;
+			}
+
+			#inputArea > p{
+				display:inline;
+			}
+			#backButton{
+				position:fixed;
+				right: 2%;
+				bottom: 2%;
+				font-size:20px;
+				  background-color: #ececec;
+  				color: black;
+			}
+			#weekButton{font-size:20px;  background-color: #ececec;
+						color: BLACK;padding: 2px;margin : 5px;}
+ 
+			a {
+  				text-decoration: none;
+  				display: inline-block;
+ 				 padding: 8px 50px;
+			}
+		
+				body { background-color: white;}
+	
+}
+
+/* Medium devices (desktops 992px and up) */
+@media (min-width: 992px) { /* Styling applied only if device width is GREATER than 992px */
+	#inputArea{
+				font-size:20px;
+				padding: 2px;
+				margin : 5px;
+				width: 25%;
+			}
+			
+			#inputArea > button{
+				width: 40%;
+			}
+
+			#inputArea > p{
+				display:inline;
+			}
+			#backButton{
+				position:fixed;
+				right: 2%;
+				bottom: 2%;
+				font-size:20px;
+			}
+			#weekButton{font-size:20px;  background-color: #ececec;
+						color: BLACK;padding: 2px;margin : 5px;}
+ 
+			
+			body { background-color: white; }
+	
+}
+
+/* Large devices (desktops 1200px and up) */
+@media (min-width: 1200px) { /* Styling applied only if device width is greater than 1200px */
+			
+			#inputArea{
+				font-size:20px;
+				padding: 2px;
+				margin : 5px;
+				width: 25%;
+			}
+			
+			#inputArea > button{
+				width: 40%;
+			}
+
+			#inputArea > p{
+				display:inline;
+			}
+			#backButton{
+				position:fixed;
+				right: 2%;
+				bottom: 2%;
+				font-size:20px;  background-color: #ececec;
+				color: black;text-decoration: none;
+  				display: inline-block;
+ 				 padding: 8px 50px;
+			}
+		
+			#weekButton{font-size:20px;  background-color: #ececec;
+						color: BLACK;padding: 2px;margin : 5px;text-decoration: none;
+  				display: inline-block;
+ 				 padding: 8px 50px;}
+ 
+			a {
+  				text-decoration: none;
+  				display: inline-block;
+ 				 padding: 8px 50px;
+				}		
+			body { background-color: white; }
+	
+}
+
